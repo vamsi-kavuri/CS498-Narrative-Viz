@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Narrative Visualization - CS 498 DV</title> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <input id="selectedChart" type="hidden" name="selectedChart" value="GDP">
+
+    <div id="container">
+        <div class="header-buttons">
+            <button id="gdp_btn" onclick="render('GDP')">GDP per Capita</button>
+            <button id="res_btn" onclick="render('reserves')">Total Reserves</button>
+            <button id="life_btn" onclick="render('LifeExp')">Life Expectancy</button>
+            <button id="emp_btn" onclick="render('emp')">Total Employment</button>
+            <a class="nav-link" href="./home.html"> About Visulization </a>
+
+        </div>
+
+        <div id="selectbox">
+
+            <button class="nav-buttons"  id="prev" onclick="movePrev()"> &lArr; Prev </button>
+
+        Change Country:         <select id="countrySelect" onchange="chnageCountry()">
+            <option value="USA" selected>United States</option>
+            <option value="CHN">China</option>
+            <option value="JPN">Japan</option>
+            <option value="DEU">Germany</option>
+            <option value="IND">India</option>
+            <option value="GBR">United Kingdom</option>
+            <option value="FRA">France</option>
+            <option value="BRA">Brazil</option>
+            <option value="ITA">Italy</option>
+            <option value="CAN">Canada</option>
+    
+          </select>
+
+          <button class="nav-buttons-right" id="next" onclick="moveNext()"> Next &rArr;</button>
+
+        </div>
+
+
+        <div id="title"><h1 id="currentTitle"></h1></div>
+        <svg width="900" height="500" id="chart"></svg>
+    </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+   <script src="./scripts/chart.js"></script>
+   <script src="./scripts/annotation.js"></script>
+  </body>
+</html>
