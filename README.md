@@ -1,7 +1,7 @@
 # CS498 Final Project - Narrative Visualization
 Vamsi Kavuri(vkavuri2)
 
-Link to view final visulization : TBD
+Link to view final visulization : [https://vamsi-kavuri.github.io/CS498-Narrative-Viz](https://vamsi-kavuri.github.io/CS498-Narrative-Viz/)
 
 
 ### Messaging. What is the message you are trying to communicate with the narrative visualization?
